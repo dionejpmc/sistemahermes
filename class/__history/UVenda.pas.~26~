@@ -1,0 +1,108 @@
+unit UVenda;
+
+interface
+uses Classes, UProduto;
+type
+  Venda = class
+
+  private
+
+  protected
+    FNumNota:integer;
+    FSerie:string;
+    FUmaListaProduto:TList;
+    FDesconto:Double;
+    FValorTotalVenda:Double;
+    FDataVenda:string;
+
+  public
+    procedure setNumNota(vNumNota:integer);
+    procedure setSerie(vSerie:string);
+    procedure setUmaListaProduto(vUmaListaProduto:TList);
+    procedure setDesconto(vDesconto:Double);
+    procedure setValorTotalVenda(vValorTotalVenda:Double);
+    procedure setDataVenda(vDataVenda:String);
+
+    function getNumNota:integer;
+    function getSerie:string;
+    function getUmaListaProduto:TList;
+    function getDesconto:Double;
+    function getValorTotalVenda:Double;
+    function getDataVenda:string;
+
+     property NumNota:integer read getNumNota write setNumNota;
+     property Serie:string read getSerie write setSerie ;
+     property UmaListaProduto:Tlist read getUmaListaProduto  write setUmaListaProduto;
+     property Desconto:Double read getDesconto  write setDesconto;
+     property ValorTotalVenda:Double read getValorTotalVenda  write setValorTotalVenda ;
+     property DataVenda:Double read getDataVenda  write setDataVenda;
+
+
+
+  end;
+
+implementation
+
+{ Venda }
+
+function Venda.getDataVenda: string;
+begin
+    Result:= FDataVenda;
+end;
+
+function Venda.getDesconto: Double;
+begin
+   Result:=FDesconto;
+end;
+
+function Venda.getNumNota: integer;
+begin
+   Result:=FNumNota;
+end;
+
+function Venda.getSerie: string;
+begin
+   Result:= FSerie;
+end;
+
+function Venda.getUmaListaProduto: TList;
+begin
+   Result:= FUmaListaProduto;
+end;
+
+function Venda.getValorTotalVenda: Double;
+begin
+ Result:=ValorTotalVenda;
+end;
+
+procedure Venda.setDataVenda(vDataVenda: String);
+begin
+    FDataVenda:= vDataVenda;
+end;
+
+procedure Venda.setDesconto(vDesconto: Double);
+begin
+   FDesconto:=vDesconto;
+end;
+
+procedure Venda.setNumNota(vNumNota: integer);
+begin
+   FNumNota:=vNumNota;
+end;
+
+procedure Venda.setSerie(vSerie: string);
+begin
+   FSerie:=vSerie;
+end;
+
+procedure Venda.setUmaListaProduto(vUmaListaProduto: TList);
+begin
+
+end;
+
+procedure Venda.setValorTotalVenda(vValorTotalVenda: Double);
+begin
+
+end;
+
+end.

@@ -1,0 +1,74 @@
+unit UDaoVenda;
+
+interface
+uses UDao, UDM, DB, Classes,UVenda, SysUtils, UProduto, UCtrlProduto,Dialogs, Messages;
+type
+    TDaoVenda = class (TDao)
+
+    private
+
+    protected
+
+    public
+          constructor Create;                                            override;
+          destructor Destroy;                                            override;
+          function SalvarVendaTemp( Objeto : TVenda): string;
+
+    end;
+
+implementation
+
+{ TDaoVenda }
+
+
+constructor TDaoVenda.Create;
+begin
+  inherited;
+
+end;
+
+destructor TDaoVenda.Destroy;
+begin
+  inherited;
+
+end;
+
+function TDaoVenda.SalvarVendaTemp(Objeto: TVenda): string;
+var MSG:String;
+    UmaVenda:TVenda;
+begin
+    UmaVenda:= Objeto;
+    try
+        if not FDM.IBTransaction1.Active then
+        begin
+             FDM.IBTransaction1.Active:=True;
+             FDM.IBTransaction1.StartTransaction;
+        end;
+        if not FDM.IBDataSetVendaGeralTemp.Active then
+        begin
+             FDM.IBDataSetVendaGeralTemp.Active:=True;
+             FDM.IBDataSetVendaGeralTemp.Open;
+        end;
+        FDM.IBDataSetVendaGeralTemp.Active:=True;
+        FDM.IBDataSetVendaGeralTemp.Open;
+
+        FDM.IBDataSetVendaGeralTemp.Insert;
+
+        FDM.IBDataSetVendaGeralTempNUMNOTA.Value:=UmaVenda.NumNota;
+        FDM.IBDataSetVendaGeralTempSERIE.Value:= UmaVenda.Serie;
+        FDM.IBDataSetVendaGeralTempVALORTOTALNOTA.Value:=UmaVenda.ValorTotalVenda;
+        FDM.IBDataSetVendaGeralTempDATAVENDA.Value:= UmaVenda.DataVenda;
+        FDM.IBDataSetVendaGeralTempSTATUS.Value:= 'Vendido';
+
+        FDM.IBDataSetVendaGeralTemp.Post;
+
+        FDM.IBTransaction1.CommitRetaining;
+        MSG:='VENDA EFETUADA';
+    except
+        FDM.IBTransaction1.RollbackRetaining;
+        MSG:='ERRO AO EFETUAR VENDA';
+    end;
+       Result:=MSG;
+end;
+
+end.

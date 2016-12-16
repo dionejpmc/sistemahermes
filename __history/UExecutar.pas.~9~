@@ -1,0 +1,18 @@
+unit UExecutar;
+
+interface
+uses UInterface;
+
+type
+  TExecutar = class
+
+  private
+  protected
+
+  public
+
+end;
+
+implementation
+
+end.

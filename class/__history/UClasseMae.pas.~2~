@@ -1,0 +1,10 @@
+unit uclassemae;
+
+interface
+type classemae = class
+
+end;
+
+implementation
+
+end.

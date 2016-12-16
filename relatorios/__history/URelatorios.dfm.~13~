@@ -1,0 +1,233 @@
+object relatorios: Trelatorios
+  Left = 0
+  Top = 0
+  Caption = 'relatorios'
+  ClientHeight = 421
+  ClientWidth = 699
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object frxReport1: TfrxReport
+    Version = '5.1.9'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42711.636855972200000000
+    ReportOptions.LastChange = 42713.797148854200000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      '                     '
+      'end.')
+    Left = 24
+    Top = 16
+    Datasets = <
+      item
+        DataSet = frxReport1.DBXTable1
+        DataSetName = 'DBXTable1'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+      object DBXDatabase1: TfrxDBXDatabase
+        ConnectionName = 'FBConnection'
+        DriverName = 'Firebird'
+        GetDriverFunc = 'getSQLDriverINTERBASE'
+        LibraryName = 'dbxfb.dll'
+        LoginPrompt = False
+        Params.Strings = (
+          'DriverName=Firebird'
+          'Database=Y:\Projetos Delphi\DATABASE.FDB'
+          'RoleName=RoleName'
+          'User_Name=sysdba'
+          'Password=masterkey'
+          'ServerCharSet='
+          'SQLDialect=3'
+          'ErrorResourceFile='
+          'LocaleCode=0000'
+          'BlobSize=-1'
+          'CommitRetain=False'
+          'WaitOnLocks=True'
+          'IsolationLevel=ReadCommitted'
+          'Trim Char=False')
+        VendorLib = 'fbclient.dll'
+        Connected = True
+        pLeft = 102
+        pTop = 99
+      end
+      object DBXTable1: TfrxDBXTable
+        UserName = 'DBXTable1'
+        CloseDataSource = False
+        FieldAliases.Strings = (
+          'IDPRODUTO=IDPRODUTO'
+          '-CODBARRAS=CODBARRAS'
+          'DESCRICAO=DESCRICAO'
+          '-QTDE=QTDE'
+          'VALORVENDA=VALORVENDA'
+          '-VALORCOMPRA=VALORCOMPRA'
+          '-ICMS=ICMS'
+          '-IPI=IPI'
+          '-MARCA=MARCA'
+          '-MODELO=MODELO'
+          '-LOCAL=LOCAL'
+          '-OBSERVACAO=OBSERVACAO'
+          '-TIPO=TIPO')
+        BCDToCurrency = False
+        TableName = 'PRODUTO'
+        Database = frxReport1.DBXDatabase1
+        pLeft = 175
+        pTop = 100
+      end
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 180.000000000000000000
+      PaperHeight = 250.000000000000000000
+      PaperSize = 256
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        FillType = ftBrush
+        Height = 91.913420000000000000
+        Top = 18.897650000000000000
+        Width = 604.724800000000000000
+        AllowSplit = True
+        object cnpj: TfrxMemoView
+          Left = 0.220470000000000000
+          Top = 71.677180000000000000
+          Width = 340.157700000000000000
+          Height = 22.677180000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'CNPJ:')
+          ParentFont = False
+        end
+        object ie: TfrxMemoView
+          Left = 377.953000000000000000
+          Top = 73.236240000000000000
+          Width = 226.771800000000000000
+          Height = 22.677180000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'IE:')
+          ParentFont = False
+        end
+        object tel: TfrxMemoView
+          Left = 169.953000000000000000
+          Top = 46.322820000000000000
+          Width = 226.771800000000000000
+          Height = 34.015770000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Telefone:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object endereco: TfrxMemoView
+          Left = 44.000000000000000000
+          Top = 24.000000000000000000
+          Width = 484.157700000000000000
+          Height = 34.015770000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Endere'#231'o:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object EMPRESA: TfrxMemoView
+          Left = 154.000000000000000000
+          Top = 0.102350000000000000
+          Width = 270.086580000000000000
+          Height = 47.000000000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -27
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'SISTEMA HERMES')
+          ParentFont = False
+        end
+      end
+      object PageFooter1: TfrxPageFooter
+        FillType = ftBrush
+        Height = 22.677180000000000000
+        Top = 313.700990000000000000
+        Width = 604.724800000000000000
+      end
+      object MasterData1: TfrxMasterData
+        FillType = ftBrush
+        Height = 30.677180000000000000
+        Top = 170.078850000000000000
+        Width = 604.724800000000000000
+        RowCount = 0
+        object qtde: TfrxMemoView
+          Left = 3.000000000000000000
+          Top = 1.921150000000000000
+          Width = 42.000000000000000000
+          Height = 22.000000000000000000
+          Memo.UTF8W = (
+            'Qtde')
+        end
+      end
+      object DetailData1: TfrxDetailData
+        FillType = ftBrush
+        Height = 31.566790000000000000
+        Top = 222.992270000000000000
+        Width = 604.724800000000000000
+        RowCount = 0
+        Stretched = True
+        object ddqtde: TfrxMemoView
+          Left = 3.000000000000000000
+          Top = 1.566790000000000000
+          Width = 48.000000000000000000
+          Height = 27.000000000000000000
+          Memo.UTF8W = (
+            'ddqtde')
+        end
+        object Memo1: TfrxMemoView
+          Left = 69.000000000000000000
+          Top = 4.007730000000000000
+          Width = 309.000000000000000000
+          Height = 27.000000000000000000
+          DataField = 'DESCRICAO'
+          DataSet = frxReport1.DBXTable1
+          DataSetName = 'DBXTable1'
+          Memo.UTF8W = (
+            '[DBXTable1."DESCRICAO"]')
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,25 @@
+unit UExecutar;
+
+interface
+uses UInterface;
+
+type
+  TExecutar = class
+
+  private
+
+  protected
+
+    UmaInterface:TInterface;
+
+  public
+
+    constructor Criar();
+    destructor Destruir();
+
+
+end;
+
+implementation
+
+end.

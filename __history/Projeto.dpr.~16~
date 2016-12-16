@@ -1,0 +1,29 @@
+program Projeto;
+
+uses
+  Forms,
+  UMenu in 'UMenu.pas' {Menu},
+  UExecutar in 'UExecutar.pas',
+  UInterface in 'UInterface.pas',
+  ufrmcaixa in 'ufrm\ufrmcaixa.pas',
+  ufrmcliente in 'ufrm\ufrmcliente.pas',
+  ufrmproduto in 'ufrm\ufrmproduto.pas' {FrmProduto},
+  ufrmmae in 'ufrm\ufrmmae.pas' {Form_mae},
+  UProduto in 'class\UProduto.pas',
+  UCtrlProduto in 'controller\UCtrlProduto.pas',
+  UDaoProduto in 'dao\UDaoProduto.pas',
+  UDAO in 'dao\UDAO.pas',
+  UDM in 'UDM.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+var UmExecutar:TExecutar;
+
+begin
+  UmExecutar:=TExecutar.Criar;
+  UmExecutar.Executar;
+  UmExecutar.Destruir;
+  //Application.Initialize;
+ // Application.MainFormOnTaskbar := True;
+  //Application.CreateForm(TMenu, Menu);
+ // Application.Run;
+end.

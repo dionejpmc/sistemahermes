@@ -1,0 +1,39 @@
+unit uexecutar;
+
+interface
+  type executar = class
+
+  private
+
+  protected
+
+  public
+    constructor Create;
+    destructor Destroy;
+    procedure Execute;
+
+
+end;
+
+
+
+implementation
+
+{ executar }
+
+constructor executar.Create;
+begin
+
+end;
+
+destructor executar.Destroy;
+begin
+
+end;
+
+procedure executar.Execute;
+begin
+
+end;
+
+end.

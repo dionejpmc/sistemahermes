@@ -1,0 +1,30 @@
+unit UInterface;
+
+interface
+type TInterface = class
+
+      private
+
+      protected
+
+      public
+        Constructor Criar();
+        Destructor Destruir();
+end;
+
+
+implementation
+
+{ TInterface }
+
+constructor TInterface.Criar;
+begin
+
+end;
+
+destructor TInterface.Destruir;
+begin
+
+end;
+
+end.

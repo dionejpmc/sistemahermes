@@ -1,0 +1,27 @@
+unit UCtrlVenda;
+
+interface
+uses UVenda,Classes;
+type TCtrlVenda = class
+
+      private
+
+      protected
+        FUmaVenda:TVenda;
+
+      public
+        procedure SalvarVenda(vVenda:TVenda);
+
+        function getPeriodoVenda(vPeriodoI:string; vPeriodoII:string):TList;
+        procedure FecharCaixa(vPeriodo:string);
+        procedure AbrirCaixa(vUser:integer);
+
+        constructor Criar;
+        destructor Destruir;
+
+
+end;
+
+implementation
+
+end.

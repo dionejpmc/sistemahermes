@@ -1,0 +1,19 @@
+ Ambiente de Homologação da NFC-e:
+
+- Autorização:
+https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3
+
+- Consulta Recibo:
+https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3
+
+- Consulta Chave de Acesso:
+https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeConsulta3
+
+- Inutilização:
+https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3
+
+- Consulta Status do Serviço:
+https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3
+
+- Registro de Eventos:
+https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento

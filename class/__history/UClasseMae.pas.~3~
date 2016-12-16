@@ -1,0 +1,10 @@
+unit UClasseMae;
+
+interface
+type UClasseMae = class
+
+end;
+
+implementation
+
+end.

@@ -1,0 +1,51 @@
+unit UDM;
+
+interface
+
+uses
+  SysUtils, Classes, IBDatabase, DB, IBCustomDataSet, RpDefine, RpCon, RpConDS,
+  DBClient, SOAPConn, TypInfo, WebServExp, WSDLBind, XMLSchema, InvokeRegistry,
+  WSDLIntf, SOAPPasInv, SOAPHTTPPasInv, SOAPHTTPDisp, WebBrokerSOAP, WSDLPub;
+
+type
+  TDataModule1 = class(TDataModule)
+    IBDatabase: TIBDatabase;
+    DataSetConnection: TRvDataSetConnection;
+    IBDataSetProduto: TIBDataSet;
+    DataSourceProduto: TDataSource;
+    IBTransaction1: TIBTransaction;
+    IBDataSetProdutoIDPRODUTO: TIntegerField;
+    IBDataSetProdutoCODBARRAS: TIBStringField;
+    IBDataSetProdutoDESCRICAO: TIBStringField;
+    IBDataSetProdutoQTDE: TFloatField;
+    IBDataSetProdutoVALORVENDA: TFloatField;
+    IBDataSetProdutoVALORCOMPRA: TFloatField;
+    IBDataSetProdutoICMS: TFloatField;
+    IBDataSetProdutoIPI: TFloatField;
+    IBDataSetProdutoMARCA: TIBStringField;
+    IBDataSetProdutoMODELO: TIBStringField;
+    IBDataSetProdutoLOCAL: TIBStringField;
+    IBDataSetProdutoOBSERVACAO: TIBStringField;
+    IBDataSetProdutoTIPO: TIntegerField;
+    DataSourceVendasGeralItensTemp: TDataSource;
+    IBDataSetVendasGeralItensTemp: TIBDataSet;
+    DataSourceVendaGeralTemp: TDataSource;
+    IBDataSetVendaGeralTemp: TIBDataSet;
+    IBDataSetVendaGeralTempNUMNOTA: TIntegerField;
+    IBDataSetVendaGeralTempSERIE: TIBStringField;
+    IBDataSetVendaGeralTempIDCLIENTE: TIntegerField;
+    IBDataSetVendaGeralTempVALORTOTALNOTA: TFloatField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/11/17 15:36:01.433.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\class\UProduto.pas</Transaction>
+    <Transaction>2016/11/17 16:01:26.642.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\controller\UCtrlProduto.pas</Transaction>
+    <Transaction>2016/11/17 16:01:39.370.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\dao\UDaoProduto.pas</Transaction>
+    <Transaction>2016/11/17 16:08:54.876.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\UDM.pas</Transaction>
+    <Transaction>2016/11/17 16:08:54.876.dfm,Y:\Projetos Delphi\Unit1.dfm=Y:\Projetos Delphi\UDM.dfm</Transaction>
+    <Transaction>2016/11/17 17:09:02.363.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\UDM.pas</Transaction>
+    <Transaction>2016/11/17 17:09:02.363.dfm,Y:\Projetos Delphi\Unit1.dfm=Y:\Projetos Delphi\UDM.dfm</Transaction>
+    <Transaction>2016/12/02 11:17:46.572.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\class\UVenda.pas</Transaction>
+    <Transaction>2016/12/02 13:21:39.582.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\controller\UCtrlVenda.pas</Transaction>
+    <Transaction>2016/12/02 13:21:54.973.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\dao\UDaoVenda.pas</Transaction>
+    <Transaction>2016/12/02 15:03:29.171.dproj,Y:\Projetos Delphi\Projeto.dproj=Y:\Projetos Delphi\Hermes.dproj</Transaction>
+    <Transaction>2016/12/07 14:49:08.945.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\ufrm\URelatorioProdutos.pas</Transaction>
+    <Transaction>2016/12/07 14:49:08.945.dfm,Y:\Projetos Delphi\Unit1.dfm=Y:\Projetos Delphi\ufrm\URelatorioProdutos.dfm</Transaction>
+    <Transaction>2016/12/07 15:16:58.076.pas,Y:\Projetos Delphi\Unit2.pas=Y:\Projetos Delphi\relatorios\UCF.pas</Transaction>
+    <Transaction>2016/12/07 15:16:58.076.dfm,Y:\Projetos Delphi\Unit2.dfm=Y:\Projetos Delphi\relatorios\UCF.dfm</Transaction>
+    <Transaction>2016/12/09 14:47:01.889.pas,Y:\Projetos Delphi\Unit3.pas=Y:\Projetos Delphi\ufrm\UFrmFornecedor.pas</Transaction>
+    <Transaction>2016/12/09 14:47:01.889.dfm,Y:\Projetos Delphi\Unit3.dfm=Y:\Projetos Delphi\ufrm\UFrmFornecedor.dfm</Transaction>
+    <Transaction>2016/12/09 14:49:12.487.pas,Y:\Projetos Delphi\ufrm\UFrmFornecedor.pas=</Transaction>
+    <Transaction>2016/12/09 14:49:12.487.dfm,Y:\Projetos Delphi\ufrm\UFrmFornecedor.dfm=</Transaction>
+    <Transaction>2016/12/09 14:49:17.999.pas,Y:\Projetos Delphi\Unit1.pas=Y:\Projetos Delphi\ufrm\UFrmFornecedor.pas</Transaction>
+    <Transaction>2016/12/09 14:49:17.999.dfm,Y:\Projetos Delphi\Unit1.dfm=Y:\Projetos Delphi\ufrm\UFrmFornecedor.dfm</Transaction>
+    <Transaction>2016/12/09 16:27:12.507.pas,Y:\Projetos Delphi\relatorios\UCF.pas=</Transaction>
+    <Transaction>2016/12/09 16:27:12.507.dfm,Y:\Projetos Delphi\relatorios\UCF.dfm=</Transaction>
+    <Transaction>2016/12/09 17:33:10.296.pas,Y:\Projetos Delphi\Unit2.pas=Y:\Projetos Delphi\relatorios\URelatorios.pas</Transaction>
+    <Transaction>2016/12/09 17:33:10.296.dfm,Y:\Projetos Delphi\Unit2.dfm=Y:\Projetos Delphi\relatorios\URelatorios.dfm</Transaction>
+    <Transaction>2016/12/12 15:35:52.173.pas,Y:\Projeto Hermes\relatorios\URelatorios.pas=</Transaction>
+    <Transaction>2016/12/12 15:35:52.173.dfm,Y:\Projeto Hermes\relatorios\URelatorios.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

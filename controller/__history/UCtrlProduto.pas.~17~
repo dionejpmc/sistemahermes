@@ -1,0 +1,39 @@
+unit UCtrlProduto;
+
+interface
+
+uses UDaoProduto, UProduto;
+
+Type
+  TCtrlProduto = Class
+
+  public
+    UmaDaoProduto: TDaoProduto;
+
+    function Salvar(Objeto: TProduto): string;
+    function Carregar(Objeto: TProduto):TObject;
+
+    constructor Criar;
+    Destructor Destruir;
+  End;
+
+implementation
+
+{ TCtrlProduto }
+
+constructor TCtrlProduto.Criar;
+begin
+     UmaDaoProduto:= TDaoProduto.Create;
+end;
+
+destructor TCtrlProduto.Destruir;
+begin
+     UmaDaoProduto.Destroy;
+end;
+
+function TCtrlProduto.Salvar(Objeto: TProduto): string;
+begin
+    UmaDaoProduto.Salvar(Objeto);
+end;
+
+end.

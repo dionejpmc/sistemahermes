@@ -1,0 +1,32 @@
+unit UInterface;
+
+interface
+uses UMenu;
+type TInterface = class
+
+      private
+
+      protected
+        UmMenu:TMenu;
+
+      public
+        Constructor Criar();
+        Destructor Destruir();
+end;
+
+
+implementation
+
+{ TInterface }
+
+constructor TInterface.Criar;
+begin
+
+end;
+
+destructor TInterface.Destruir;
+begin
+
+end;
+
+end.

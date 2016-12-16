@@ -1,0 +1,18 @@
+program Hermes;
+uses
+  Forms,
+  Windows,
+  UExecutar in 'UExecutar.pas';
+
+{$R *.res}
+var UmExecutar:TExecutar;
+
+begin
+  UmExecutar:=TExecutar.Criar;
+  UmExecutar.Executar;
+  UmExecutar.Destruir;
+  //  Application.Initialize;
+   // Application.MainFormOnTaskbar := True;
+    //Application.CreateForm(TMenu, Menu);
+   // Application.Run;
+end.

@@ -1,0 +1,11 @@
+unit UInterface;
+
+interface
+type TInterface = class
+
+end;
+
+
+implementation
+
+end.

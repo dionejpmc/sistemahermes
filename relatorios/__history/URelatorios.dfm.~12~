@@ -1,0 +1,168 @@
+object relatorios: Trelatorios
+  Left = 0
+  Top = 0
+  Caption = 'relatorios'
+  ClientHeight = 421
+  ClientWidth = 699
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object frxReport1: TfrxReport
+    Version = '5.1.9'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42711.636855972200000000
+    ReportOptions.LastChange = 42713.776296053240000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      '                     '
+      'end.')
+    Left = 24
+    Top = 16
+    Datasets = <>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 180.000000000000000000
+      PaperHeight = 250.000000000000000000
+      PaperSize = 256
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        FillType = ftBrush
+        Height = 91.913420000000000000
+        Top = 18.897650000000000000
+        Width = 604.724800000000000000
+        AllowSplit = True
+        object cnpj: TfrxMemoView
+          Left = 0.220470000000000000
+          Top = 71.677180000000000000
+          Width = 340.157700000000000000
+          Height = 22.677180000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'CNPJ:')
+          ParentFont = False
+        end
+        object ie: TfrxMemoView
+          Left = 377.953000000000000000
+          Top = 73.236240000000000000
+          Width = 226.771800000000000000
+          Height = 22.677180000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'IE:')
+          ParentFont = False
+        end
+        object tel: TfrxMemoView
+          Left = 169.953000000000000000
+          Top = 46.322820000000000000
+          Width = 226.771800000000000000
+          Height = 34.015770000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Telefone:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object endereco: TfrxMemoView
+          Left = 44.000000000000000000
+          Top = 24.000000000000000000
+          Width = 484.157700000000000000
+          Height = 34.015770000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Endere'#231'o:')
+          ParentFont = False
+          VAlign = vaCenter
+        end
+        object EMPRESA: TfrxMemoView
+          Left = 154.000000000000000000
+          Top = 0.102350000000000000
+          Width = 270.086580000000000000
+          Height = 47.000000000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -27
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'SISTEMA HERMES')
+          ParentFont = False
+        end
+      end
+      object PageFooter1: TfrxPageFooter
+        FillType = ftBrush
+        Height = 22.677180000000000000
+        Top = 306.141930000000000000
+        Width = 604.724800000000000000
+      end
+      object MasterData1: TfrxMasterData
+        FillType = ftBrush
+        Height = 23.677180000000000000
+        Top = 170.078850000000000000
+        Width = 604.724800000000000000
+        RowCount = 0
+      end
+      object DetailData1: TfrxDetailData
+        FillType = ftBrush
+        Height = 31.566790000000000000
+        Top = 215.433210000000000000
+        Width = 604.724800000000000000
+        RowCount = 0
+        object ddqtde: TfrxMemoView
+          Left = 3.000000000000000000
+          Top = 1.566790000000000000
+          Width = 48.000000000000000000
+          Height = 27.000000000000000000
+          Memo.UTF8W = (
+            'ddqtde')
+        end
+      end
+      object Memo1: TfrxMemoView
+        Left = 2.000000000000000000
+        Top = 170.000000000000000000
+        Width = 42.000000000000000000
+        Height = 22.000000000000000000
+        Memo.UTF8W = (
+          'Qtde')
+      end
+    end
+  end
+end

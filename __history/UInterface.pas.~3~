@@ -1,0 +1,17 @@
+unit UInterface;
+
+interface
+type TInterface = class
+
+      private
+
+      protected
+
+      public
+
+end;
+
+
+implementation
+
+end.

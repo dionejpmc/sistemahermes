@@ -1,0 +1,11 @@
+unit UExecutar;
+interface
+
+type
+  TExecutar = class
+
+end;
+
+implementation
+
+end.

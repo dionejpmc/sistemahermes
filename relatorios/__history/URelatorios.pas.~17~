@@ -1,0 +1,26 @@
+unit URelatorios;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, UDM, DB,
+  Dialogs, frxClass, frxDBDataset;
+
+type
+  Trelatorios = class(TForm)
+    frxReport1: TfrxReport;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+  end;
+
+var
+  relatorios: Trelatorios;
+
+implementation
+
+{$R *.dfm}
+
+end.

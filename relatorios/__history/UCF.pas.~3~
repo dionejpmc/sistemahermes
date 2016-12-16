@@ -1,0 +1,25 @@
+unit UCF;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, frxClass;
+
+type
+  TUfrmCF = class(TForm)
+    frxReport1: TfrxReport;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  UfrmCF: TUfrmCF;
+
+implementation
+
+{$R *.dfm}
+
+end.
